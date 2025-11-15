@@ -32,35 +32,25 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 
 ### Option 1: JitPack (Recommended)
 
-1. Add JitPack repository to your project's `build.gradle.kts` (or `build.gradle`):
-```kotlin
-allprojects {
-    repositories {
-        maven { url = uri("https://jitpack.io") }
-    }
-}
+
 ```
+
+Add it in your root settings.gradle at the end of repositories:
+dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
 
 2. Add the dependency in your app's `build.gradle.kts`:
 ```kotlin
 dependencies {
-    implementation("com.github.YourUsername:authlibandroid:1.0.0")
-    // Replace YourUsername with your GitHub username
-}
-```
-
-### Option 2: Local Module
-
-1. Include the library module in your `settings.gradle.kts`:
-```kotlin
-include(":secureauthlib")
-```
-
-2. Add the dependency in your app's `build.gradle.kts`:
-```kotlin
-dependencies {
-    implementation(project(":secureauthlib"))
-}
+	        implementation 'com.github.abd476:authlibandroid:-SNAPSHOT'
+	}
 ```
 
 ## Usage
