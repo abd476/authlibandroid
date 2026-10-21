@@ -1,0 +1,14 @@
+# Android / Gradle
+.idea/
+*.iml
+.gradle/
+build/
+*.apk
+*.aab
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sensitive / local configuration
+local.properties

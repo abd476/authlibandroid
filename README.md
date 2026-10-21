@@ -10,7 +10,9 @@ A modern, developer-friendly biometric authentication library for Android. Suppo
 
 Current Version: **1.0.0**
 
-See [CHANGELOG.md](CHANGELOG.md) for version history.
+### Version history
+
+- **1.0.0** — Initial release. Fingerprint, face, PIN, pattern, and password authentication with a unified API, secure token storage, coroutine-based async handling, and intelligent method fallbacks.
 
 ## Features
 
